@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Liferay Backbone-Marionette Portlet</title>
+
+    <script data-main="js/vendors/config" src="js/vendors/node_modules/requirejs/require.js"> </script>
+
+  </head>
+  <body>
+    <div id="contents">
+
+    <table id='simons_cats' class='table table-striped' style="width: 800px; margin-left: auto; margin-right: auto">
+        <tr class='header'>
+            <th class='rank_h'>#</th>
+            <th class='name_h'>Name</th>
+            <th class='image_h'>Image</th>
+            <th class='move_rank'></th>
+      </tr>
+    </table>
+
+    </div>
+  </body>
+</html>
+
+<script>
+  require(['config'], function(){
+      require(["app"]);
+  });
+</script>
+
+<link href="js/vendors/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+

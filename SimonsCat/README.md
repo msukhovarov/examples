@@ -1,3 +1,10 @@
+# Example how to use Backbone.Marionette framework
+ues components:
+* Model,
+* Collection
+* View
+* CompositeView
+
 1. before run go to 'js/vendors' folder and run
    yarn
    all JS libs will be installed to node_modules

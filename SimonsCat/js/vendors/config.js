@@ -1,20 +1,18 @@
-var rootUrl = 'js';
+var rootUrl = '/js/';
 
 requirejs.config({
-    baseUrl: rootUrl + '/vendors/node_modules',
+    baseUrl: rootUrl + 'vendors/node_modules/',
 
-    paths: {
-        //apps: '../apps',
+    paths: {        
         jquery: 'jquery/dist/jquery.min',
         backbone: 'backbone/backbone-min',
-        radio: 'backbone.radio/build/backbone.radio.min',
+        'backbone.radio': 'backbone.radio/build/backbone.radio.min',        
         text: 'text/text',
-        marionette: 'backbone.marionette/lib/backbone.marionette.min',
+        'backbone.marionette': 'backbone.marionette/lib/backbone.marionette.min',
         bootstrap: 'bootstrap/dist/js/bootstrap.min',
         underscore: 'underscore/underscore-min',
         common: '../../app/common',
         app: '../../app/app',
-        //coll: '../../js/catsCollection'
     },
     "shim": {
         common : {
@@ -34,17 +32,25 @@ requirejs.config({
             deps: ['underscore', 'jquery', 'common', 'bootstrap'],
             exports: 'Backbone'
         },
-        coll: {
-            deps: ['backbone', 'text']
+        'backbone.radio' : {
+            deps: [],
+            exports: 'Radio'
+        },
+        'backbone.marionette' : {
+            deps: ['backbone.radio', 'radio'],
+            exports: 'Backbone.Marionette'
         },
         app: {
-            deps: ['backbone']//, 'coll']
+            deps: ['backbone', 'backbone.marionette'],
+            exports: 'App'
         }
-        /*marionette : {
-            deps: ['wreqr', 'eventbinder', 'babysitter'],
-            exports: 'Marionette'
-        }*/
     }
+});
+
+define('radio', [], function() {
+    require(['backbone.radio'], function(Radio) {
+    return Radio;
+    });
 });
 
 /*define('jquery', [], function () {

@@ -1,9 +1,9 @@
-<td class='rank'>{{ rank }}</td>
+<td class='rank' data="{{ id }}">{{ rank }}</td>
 <td class='name'>{{ name }}</td>
 <td class='image'><img class='angry_cat_pic' src='{{ image_path }}'/></td>
 <td class='move_rank' style="width: 70px; vertical-align: middle;">
 	<span style="display: inline-block">
-		<a href="#" class="rank_up {{ id }} btn btn-default "><span class="glyphicon glyphicon-upload"></span></a>
-		<a href="#" class="rank_down {{ id }} btn btn-default "><span class="glyphicon glyphicon-download"></span></a>
+		<a href="#" class="rank_up btn btn-default" data="{{ id }}"><span class="glyphicon glyphicon-upload"></span></a>
+		<a href="#" class="rank_down btn btn-default" data="{{ id }}"><span class="glyphicon glyphicon-download"></span></a>
 	</span>
 </td>

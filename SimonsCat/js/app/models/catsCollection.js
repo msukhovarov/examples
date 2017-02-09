@@ -6,7 +6,7 @@ define([Common.RootUrl + '/app/models/catModel.js'],
         model: catModel,
 
         initialize: function (cats) {
-            _.each(cats, function (cat) {
+           _.each(cats, function (cat) {
                 // This is the *same* line of code as is in set_rank. How do I call that here?
                 cat.set('rank', _.max(cats, function (cat) {
                         return cat.get('rank')

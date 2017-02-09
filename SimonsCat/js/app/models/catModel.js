@@ -3,10 +3,14 @@ function(){
     // Cat model
     var model = Backbone.Model.extend({
         defaults: {
+            id: 'none',           
             rank: 0,
             move: ''
         },
-
+        id: 0,
+        initialize: function(){
+            this.set('id', this.cid);
+        },
         rank_up: function () {
             this.set('move', 'up')
         },

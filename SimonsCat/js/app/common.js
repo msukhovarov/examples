@@ -8,6 +8,6 @@ _.templateSettings = {
 
 Common = (function () {
     return {
-        RootUrl:'/js'
+        RootUrl:'/js/'
     };
 })();

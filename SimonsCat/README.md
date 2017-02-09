@@ -1,12 +1,12 @@
 # Example how to use Backbone.Marionette framework
-ues components:
+uses components:
 * Model,
 * Collection
 * View
 * CompositeView
 
-## Requirements
-1. [yarn](https://www.yarn.com/) should be installed 
+## Requirements for running app
+1. [yarn](https://www.yarn.com/)
 2. [node js](https://nodejs.org) or other web server
 
 ## How to run

@@ -22,13 +22,15 @@ uses components:
 
 ## TODO
 * add left side bar menu:
-   parent_1
-      child_11
-      child_12
-   parent_2
-      child_21
-      child_12
-   cats for fun (collectiion)       
+```
+   parent_1\
+      child_11\
+      child_12\
+   parent_2\
+      child_21\
+      child_12\
+   cats for fun (collectiion)\
+ ```
    
 * add aditional views for parens_1, parents_2 and their childs   
 

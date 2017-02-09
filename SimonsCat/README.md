@@ -5,7 +5,13 @@ ues components:
 * View
 * CompositeView
 
-1. before run go to 'js/vendors' folder and run
+## Requirements
+1. [yarn](https://www.yarn.com/) should be installed 
+2. [node js](https://nodejs.org) or other web server
+
+## How to run
+
+1. go to 'js/vendors' folder and run
    yarn
    all JS libs will be installed to node_modules
    
